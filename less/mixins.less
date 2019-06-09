@@ -19,14 +19,18 @@
     padding: 8.5px 18.8px;
     justify-content: center;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 18.2px;
+    text-decoration: none;
 
     &:hover {
         background-color: @standardColor;
         color: @hoverColor;
         border: 1px solid @hoverColor;
         margin: -1px;
+    }
+
+    @media @phone {
+        padding: 26px 198px;
     }
 }
