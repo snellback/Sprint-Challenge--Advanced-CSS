@@ -1,15 +1,32 @@
 // Mixins Here
-.controllerStyle() {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;  
+.centered() {
+    display: flex;
+    justify-content: center;
 }
 
-.btn {
-    .buttonStyle();
-    .atmostphere();
+.aroundSpace() {
+    justify-content: space-around;
 }
 
-.buttonStyle(@justify, @align){
+.borderRadius() {
+    border-radius: 5px;
+}
 
+.buttonStyle(@standardColor: white, @hoverColor: @btn-bg-color){
+    background-color: @hoverColor;
+    border: auto;
+    color: @standardColor;
+    padding: 8.5px 18.8px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18.2px;
+
+    &:hover {
+        background-color: @standardColor;
+        color: @hoverColor;
+        border: 1px solid @hoverColor;
+        margin: -1px;
+    }
 }

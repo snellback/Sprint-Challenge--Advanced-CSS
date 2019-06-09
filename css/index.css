@@ -1,9 +1,4 @@
-.controller {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-}
+/* @phone: @media(max-width: 500px); */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,8 +172,8 @@ p {
 }
 .nav nav {
   display: flex;
-  justify-content: space-around;
   padding: 1.5% 34% 0.9%;
+  justify-content: space-around;
 }
 .nav .href {
   font-size: 1.6rem;
@@ -239,6 +234,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  border: auto;
+  color: white;
+  padding: 8.5px 18.8px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.2px;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+  border: 1px solid #22283A;
+  margin: -1px;
 }
 .home .walk .walk-img {
   width: 46%;
