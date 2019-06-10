@@ -1,1 +1,30 @@
 // Navigation code here
+.nav {
+    background-color: @nav-bg;
+    padding-top: 1%;
+    
+    h1 {
+        font-size: 4rem;
+        .centered();
+    }
+
+    nav {
+        display: flex;
+        padding: 1.5% 34% .9%;
+        .aroundSpace();
+
+        @media @phone {
+            padding: 4% 9.4% 2.2%;
+        }
+    }
+
+        .href {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @nav-font;
+        }
+
+    @media @phone {
+        padding-top: 2.5%;
+    }
+}
